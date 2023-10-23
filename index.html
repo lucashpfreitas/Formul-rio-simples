@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <title>Cadastro</title>
+</head>
+<body>
+    <div class="container">
+        <h1>Escola Virtual</h1>
+        <h2>Formulário Pré Matrícula</h2>
+
+        <form action="index.html" method="get" name="cadastro">
+            <fieldset>
+                <legend>Dados Pessoais</legend>
+                    <label>
+                        Nome do Aluno:
+                        <input type="text" name="nome" required title="nome" placeholder="Digite seu nome completo" style="width: 70%;">
+                    </label>
+                    <label>
+                        Data de Nascimento:
+                        <input type="date" name="data" required title="data">
+                    </label>
+                    <label>
+                        Nome da Mãe:
+                        <input type="text" name="nome_mae" required title="nome_mae" style="width: 70%;">
+                    </label>
+                    <label>
+                        Nome do Pai:
+                        <input type="text" name="nome_pai" required title="nome_pai" style="width: 70%;">
+                    </label>
+                    <label>
+                        DD:
+                        <input type="tel" name="DD" required title="DD" style="width: 20px;">
+                        Telefone:
+                        <input type="tel" name="telefone" required title="telefone">
+                    </label>
+                    <label>
+                        Email:
+                        <input type="email" name="email" pattern="(^[a-zA-Z0-9_.+-]+@[a-zA-Z0-9-]+\.[a-zA-Z0-9-.]+$)" placeholder="Digite seu e-mail" style="width: 70%;">
+                    </label>
+            </fieldset>
+
+            <fieldset>
+                <legend>Informações de Matricula</legend>
+                <label>
+                    Série:
+                    <select name="serie">
+                        <option>pré-escolar</option>
+                        <option>1°ano</option>
+                        <option>2°ano</option>
+                        <option>3°ano</option>
+                        <option>4°ano</option>
+                        <option>5°ano</option>
+                    </select>
+                </label>
+                <label>
+                    Turno:
+                    <input type="radio" name="turno">Manhã
+                    <input type="radio" name="turno">Tarde
+                </label>
+                <label>
+                    Atividades Extracurriculares:
+                    <input type="checkbox" name="materias" value="1">Informática
+                    <input type="checkbox" name="materias" value="2">Música
+                    <input type="checkbox" name="materias" value="3">Balet
+                    <input type="checkbox" name="materias" value="4">Pintura
+                    <input type="checkbox" name="materias" value="5">Judô
+                </label>
+            </fieldset>
+            <div class="envio">
+                <button>Enviar Formulário</button>
+                <button>Limpar Cadastro</button>
+            </div>
+        </form>
+    </div>
+</body>
+</html>
